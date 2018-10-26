@@ -1,0 +1,230 @@
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #F4E3A3;
+  background: url("/img/header-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 568px;
+
+  @media (max-width: $tablet) {
+    padding: 16px;
+    justify-content: space-around;
+  }
+
+  &__top {
+    display: flex;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 32px;
+    margin-left: 32px;
+
+    @media (max-width: $tablet) {
+      margin: 0;
+      order: 2;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    margin-left: 8px;
+    //opacity: 0.5;
+    transition: all 300ms;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__icon {
+
+    @media (max-width: 400px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__phone-link {
+    font-size: 24px;
+    text-decoration: none;
+    color: #F4E3A3;
+    margin-left: auto;
+    margin-top: 32px;
+    margin-right: 32px;
+    margin-bottom: auto;
+    transition: all 300ms;
+    position: relative;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: url("/img/icons/icon-watsapp.svg") center no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+      left: -55px;
+      top: -7px;
+
+      @media (max-width: 400px) {
+        width: 35px;
+        height: 35px;
+        left: -40px;
+        top: -4px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      margin: 0;
+      margin-bottom: 16px;
+      order: 1;
+      margin-left: 40px;
+    }
+
+    @media (max-width: 400px) {
+      margin-left: 45px;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 24px;
+      width: 40%;
+    }
+
+    @media (max-width: 400px) {
+      width: 200px;
+    }
+
+    @media (max-height: 770px) and (min-width: 1024px) {
+      width: 220px;
+    }
+  }
+
+  &__promo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+
+    @media (max-height: 770px) and (min-width: 1024px) {
+      justify-content: center;
+    }
+
+    &-title {
+      @media (max-height: 770px) and (min-width: 1024px) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 40px;
+    
+    @media (max-width: $tablet) {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 24px;
+    }
+
+    @media (max-height: 770px)and (min-width: 1024px) {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet) {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
+
+    @media (max-height: 770px) and (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: #337D44;
+    font-size: 32px;
+    padding: 16px 48px;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover {
+      background-color: #30C26F;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 24px;
+      padding: 16px 32px;
+    }
+
+    @media (max-height: 770px) and (min-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+
+  &__promo-title {
+    text-align: center;
+  }
+
+  &__promo-img {
+
+    @media (max-width: $desktop) {
+      display: none;
+    }
+
+    @media (max-height: 770px) {
+      width: 250px;
+    }
+  }
+
+}

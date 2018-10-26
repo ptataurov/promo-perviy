@@ -1,0 +1,162 @@
+.winners {
+  text-align: center;
+  color: #E4CB7B;
+  background:
+          url("/img/bg-room.svg") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: $desktop) {
+    padding: 0 16px;
+  }
+
+  &__wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 56px;
+  }
+
+  &__persons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 48px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  &__self {
+    flex: 1 1 33%;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img-avatar {
+    margin-bottom: 16px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__name, &__city, &__instagram {
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__link-instagram {
+    text-decoration: none;
+    color: #E4CB7B;
+    opacity: 0.7;
+    transition: all 300ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__youtube {
+    display: none;
+
+    @media (max-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__youtube-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__youtube-item {
+    //background: url("/img/icons/icon-play.svg") no-repeat center;
+    flex: 1 1 280px;
+    margin: 0 8px;
+
+    @media (max-width: $tablet) {
+      flex: 1 1 100%;
+      margin: 0;
+    }
+  }
+
+  &__youtube-item-wrap {
+    position: relative;
+  }
+
+  &__youtube-img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  &__youtube-icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__youtube-title {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+
+  .video-slider {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__video {
+    margin-bottom: 16px;
+  }
+
+  &__select-video {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__screenshot-list {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 300ms;
+    width: calc(100% * 9);
+  }
+
+  &__screenshot-item {
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline;
+    float: left;
+  }
+
+  &__viewport-select-video {
+    display: table;
+    overflow: hidden;
+  }
+
+}

@@ -1,0 +1,98 @@
+.slider {
+  max-width: 980px;
+  margin: 0 auto;
+
+  &__viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  &__wrap {
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1000ms;
+    transition-timing-function: ease-in-out;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+  }
+
+  &__slide {
+    width: calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:nth-child(1) {
+      background: url(http://perviygroup.ru/kvartiravmoskve/img/1.jpg) no-repeat center;
+      background-size: contain;
+    }
+    &:nth-child(2) {
+      background: url(http://perviygroup.ru/kvartiravmoskve/img/2.jpg) no-repeat center;
+      background-size: contain;
+    }
+    &:nth-child(3) {
+      background: url(http://perviygroup.ru/kvartiravmoskve/img/3.jpg) no-repeat center;
+      background-size: contain;
+    }
+    &:nth-child(4) {
+      background: url(http://perviygroup.ru/kvartiravmoskve/img/4.jpg) no-repeat center;
+      background-size: contain;
+    }
+
+}
+
+  &__img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__btn-prev, &__btn-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 300ms;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__btn-prev {
+    left: 0;
+  }
+
+  &__btn-next {
+    right: 0;
+  }
+
+  &__icon {
+
+    @media (max-width: 768px) {
+      fill: #ffffff;
+    }
+  }
+
+}

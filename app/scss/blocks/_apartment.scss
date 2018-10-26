@@ -1,0 +1,130 @@
+.apartment {
+  background: #fff;
+  color: #292929;
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 32px 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    border-top: 3px solid #000000;
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  &__item {
+    flex: 0 1 20%;
+
+    @media (max-width: 768px) {
+      flex: 1 1 20%;
+    }
+  }
+
+  &__btn-doc, &__btn-photo, &__btn-map {
+    background-color: transparent;
+    border: none;
+    padding: 16px 32px;
+    padding-top: 27px;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    color: #292929;
+    margin-top: -3px;
+    font-size: 20px;
+    transition: background 300ms;
+
+    &:hover {
+      background: rgba(20, 55, 99, 0.1);
+    }
+
+    @media (max-width: 440px) {
+      font-size: 16px;
+      padding: 8px 16px;
+      padding-top: 19px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+
+  &__document {
+    text-align: center;
+    display: none;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    padding: 0 16px;
+
+    &--zoom {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__document-img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    cursor: zoom-in;
+
+    &--zoom {
+      cursor: zoom-out;
+      max-height: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media (max-width: 440px) {
+        height: auto;
+        width: 90%;
+      }
+    }
+  }
+
+  &__tabs {
+    height: 500px;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      //height: auto;
+    }
+  }
+
+  &__map {
+    display: none;
+    width: 100%;
+  }
+
+  .active {
+    border-top: 11px solid #000000;
+    padding-top: 16px;
+
+    @media (max-width: 440px) {
+      padding-top: 8px;
+    }
+  }
+}
