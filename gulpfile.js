@@ -98,7 +98,7 @@ gulp.task('build', ['removebuild', 'sass', 'js'], () => {
 
     gulp.src('app/js/main.js')
         .pipe(babel({
-            presets: ['env']
+            presets: ['@babel/env']
         }))
         .pipe(uglify())
         .pipe(gulp.dest('build/js'));
