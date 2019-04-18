@@ -1401,16 +1401,16 @@
     background-repeat: no-repeat;
     background-position: center; }
     .slider__slide:nth-child(1) {
-      background: url(http://perviygroup.ru/kvartiravmoskve/img/1.jpg) no-repeat center;
+      background: url(/img/kv.png) no-repeat center;
       background-size: contain; }
     .slider__slide:nth-child(2) {
-      background: url(http://perviygroup.ru/kvartiravmoskve/img/2.jpg) no-repeat center;
+      background: url(/img/kv.png) no-repeat center;
       background-size: contain; }
     .slider__slide:nth-child(3) {
-      background: url(http://perviygroup.ru/kvartiravmoskve/img/3.jpg) no-repeat center;
+      background: url(/img/kv.png) no-repeat center;
       background-size: contain; }
     .slider__slide:nth-child(4) {
-      background: url(http://perviygroup.ru/kvartiravmoskve/img/4.jpg) no-repeat center;
+      background: url(/img/kv.png) no-repeat center;
       background-size: contain; }
   .slider__img {
     text-align: center;
